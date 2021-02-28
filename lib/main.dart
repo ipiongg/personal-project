@@ -9,7 +9,9 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Container(color: Colors.amber),
+      home: Text(
+        'Vamos fazer algo incrivel juntos',
+      ),
     );
   }
 }
