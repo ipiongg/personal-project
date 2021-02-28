@@ -1,13 +1,15 @@
 import 'package:flutter/material.dart';
+import 'package:personal_portfolio/app/screens/home/components/header_widget.dart';
 
 class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
         body: Container(
-      color: Colors.amber,
       width: double.infinity,
-      child: Text('Aasdasd'),
+      child: Column(
+        children: [HeaderWidget()],
+      ),
     ));
   }
 }
