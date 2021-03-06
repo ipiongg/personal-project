@@ -46,47 +46,62 @@ class _HeaderWidgetState extends State<HeaderWidget> {
           ///////
 
           Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text(
-                    'Desenvolvimento de sites e aplicativos feitos para você!'
-                        .toUpperCase(),
-                    style: TextStyle(color: Colors.white, fontSize: 22),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.symmetric(vertical: 10.0),
-                    child: Text(
-                      'Especialistas na criação de aplicativos, websites e lojas virtuais para o seu negócio.',
-                      style: TextStyle(color: Color(0xffAFAFAF), fontSize: 15),
-                    ),
-                  ),
-                  TextButton(
-                      onPressed: () {},
-                      style: TextButton.styleFrom(
-                        backgroundColor: Color(0xff05A2EF),
-                        // shape: OutlinedBorder(side: Border.all()),
-                        padding:
-                            EdgeInsets.symmetric(horizontal: 60, vertical: 15),
+              Padding(
+                padding: const EdgeInsets.only(right: 50.0),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Container(
+                      width: 400.00,
+                      child: Text(
+                        'Desenvolvimento de sites e aplicativos feitos para você!'
+                            .toUpperCase(),
+                        style: TextStyle(color: Colors.white, fontSize: 35),
                       ),
-                      child: Row(
-                        children: [
-                          Text(
-                            'Enviar Mensagem',
-                            style: TextStyle(
-                              color: Colors.white,
-                              fontSize: 20,
-                            ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.symmetric(vertical: 10.0),
+                      child: Container(
+                        width: 400.00,
+                        child: Text(
+                          'Especialistas na criação de aplicativos, websites e lojas virtuais para o seu negócio.',
+                          style:
+                              TextStyle(color: Color(0xffAFAFAF), fontSize: 15),
+                        ),
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(top: 30.0),
+                      child: TextButton(
+                          onPressed: () {},
+                          style: TextButton.styleFrom(
+                            backgroundColor: Color(0xff05A2EF),
+                            // shape: OutlinedBorder(side: Border.all()),
+                            padding:
+                                EdgeInsets.symmetric(horizontal: 60, vertical: 25),
                           ),
-                          Icon(
-                            Icons.arrow_forward,
-                            color: Colors.white,
-                            size: 18,
-                          )
-                        ],
-                      ))
-                ],
+                          child: Row(
+                            children: [
+                              Text(
+                                'Enviar Mensagem',
+                                style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 20,
+                                ),
+                              ),
+                              Icon(
+                                Icons.arrow_forward,
+                                color: Colors.white,
+                                size: 18,
+                              )
+                            ],
+                          )),
+                    )
+                  ],
+                ),
               ),
               Image.asset(
                 '/img/image-header.png',
@@ -106,16 +121,20 @@ class _HeaderWidgetState extends State<HeaderWidget> {
                       '/icon/instagram.png',
                     ),
                   ),
-                  Container(
-                    height: 60,
-                    width: 60,
-                    decoration: BoxDecoration(
-                        border: Border.all(
-                          color: Color(0xff05A2EF),
-                        ),
-                        shape: BoxShape.circle),
-                    child: Image.asset(
-                      '/icon/whatsapp.png',
+               
+                  Padding(
+                    padding: const EdgeInsets.symmetric(vertical: 20.0),
+                    child: Container(
+                      height: 60,
+                      width: 60,
+                      decoration: BoxDecoration(
+                          border: Border.all(
+                            color: Color(0xff05A2EF),
+                          ),
+                          shape: BoxShape.circle),
+                      child: Image.asset(
+                        '/icon/whatsapp.png',
+                      ),
                     ),
                   ),
                   Container(
