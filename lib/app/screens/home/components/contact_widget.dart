@@ -70,7 +70,6 @@ class ContactWidget extends StatelessWidget {
                             height: 60,
                             width: 60,
                             decoration: BoxDecoration(
-                                // color: Color(0xff05A2EF),
                                 border: Border.all(
                                   color: Color(0xff05A2EF),
                                 ),
