@@ -16,7 +16,7 @@ class _HeaderWidgetState extends State<HeaderWidget> {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              Image(image: AssetImage('/img/logo.png'), height: 50),
+              Image(image: AssetImage('/img/logo.png'), height: 55),
               Container(
                 child: Row(
                   children: [
@@ -53,13 +53,13 @@ class _HeaderWidgetState extends State<HeaderWidget> {
                   Text(
                     'Desenvolvimento de sites e aplicativos feitos para você!'
                         .toUpperCase(),
-                    style: TextStyle(color: Colors.white, fontSize: 22),
+                    style: TextStyle(color: Colors.white, fontSize: 20),
                   ),
                   Padding(
                     padding: const EdgeInsets.symmetric(vertical: 10.0),
                     child: Text(
                       'Especialistas na criação de aplicativos, websites e lojas virtuais para o seu negócio.',
-                      style: TextStyle(color: Color(0xffAFAFAF), fontSize: 15),
+                      style: TextStyle(color: Color(0xffAFAFAF), fontSize: 16),
                     ),
                   ),
                   TextButton(

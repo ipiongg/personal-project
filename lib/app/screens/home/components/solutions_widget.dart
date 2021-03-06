@@ -24,7 +24,7 @@ class SolutionsWidget extends StatelessWidget {
               'Desenvolvemos a solução ideal para a sua empresa!',
               style: TextStyle(
                 color: Colors.white,
-                fontSize: 30,
+                fontSize: 20,
               ),
             ),
           ),

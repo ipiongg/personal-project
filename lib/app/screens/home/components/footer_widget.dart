@@ -13,13 +13,14 @@ class _FooterWidgetState extends State<FooterWidget> {
         width: double.infinity,
         color: AppColors.secondary,
         child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal:80.0,vertical: 40.0),
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          padding: const EdgeInsets.only(
+              left: 80.0, right: 80.0, top: 40.0, bottom: 20.0),
+          child: Column(
             children: [
-              Column(
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Row(
+                  Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(
@@ -27,43 +28,62 @@ class _FooterWidgetState extends State<FooterWidget> {
                         style: TextStyle(
                           color: Color(0xffAFAFAF),
                           fontSize: 15,
-                          
                         ),
                       ),
+                      Padding(
+                        padding: const EdgeInsets.only(top:10.0),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Text(
+                              'Inicio',
+                              style: TextStyle(
+                                color: Color(0xffAFAFAF),
+                                fontSize: 15,
+                              ),
+                            ),
+                            Padding(
+                              padding: const EdgeInsets.symmetric(horizontal: 40.0),
+                              child: Text(
+                                'Trabalhos',
+                                style: TextStyle(
+                                  color: Color(0xffAFAFAF),
+                                  fontSize: 15,
+                                ),
+                              ),
+                            ),
+                            Text(
+                              'Contato',
+                              style: TextStyle(
+                                color: Color(0xffAFAFAF),
+                                fontSize: 15,
+                              ),
+                            ),
+                          ],
+                        ),
+                      )
                     ],
                   ),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  Column(
                     children: [
-                      Text(
-                        'Inicio',
-                        style: TextStyle(
-                          color: Color(0xffAFAFAF),
-                          fontSize: 15,
-                        ),
-                      ),
-                      Text(
-                        'Trabalhos',
-                        style: TextStyle(
-                          color: Color(0xffAFAFAF),
-                          fontSize: 15,
-                        ),
-                      ),
-                      Text(
-                        'Contato',
-                        style: TextStyle(
-                          color: Color(0xffAFAFAF),
-                          fontSize: 15,
-                        ),
-                      ),
+                      Image(image: AssetImage('/img/logo.png'), height: 80.0),
                     ],
                   )
                 ],
               ),
-              Column(
-                children: [
-                  Image(image: AssetImage('/img/logo.png'), height: 50.73),
-                ],
+              Center(
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Text(
+                      ' Copyright © 2021 see!Wave - Todos os direitos reservados.',
+                      style: TextStyle(
+                        color: Color(0xff05A2EF),
+                        fontSize: 15,
+                      ),
+                    ),
+                  ],
+                ),
               )
             ],
           ),
