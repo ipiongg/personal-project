@@ -40,8 +40,8 @@ class ContactWidget extends StatelessWidget {
                               ),
                               shape: BoxShape.circle),
                           child: Image.asset(
-                            '/icon/instagram.png', 
-                            repeat:ImageRepeat.noRepeat,
+                            '/icon/instagram.png',
+                            repeat: ImageRepeat.noRepeat,
                             filterQuality: FilterQuality.high,
                           ),
                         ),
@@ -65,17 +65,15 @@ class ContactWidget extends StatelessWidget {
                         Align(
                           alignment: Alignment.topCenter,
                           child: Container(
-                           height: 60,
-                          width: 60,
+                            height: 60,
+                            width: 60,
                             decoration: BoxDecoration(
-                                // color: Color(0xff05A2EF),
                                 border: Border.all(
                                   color: Color(0xff05A2EF),
                                 ),
                                 shape: BoxShape.circle),
                             child: Image.asset(
                               '/icon/whatsapp.png',
-                             
                             ),
                           ),
                         ),
@@ -107,7 +105,6 @@ class ContactWidget extends StatelessWidget {
                               shape: BoxShape.circle),
                           child: Image.asset(
                             '/icon/mail.png',
-                            
                           ),
                         ),
                       ),
