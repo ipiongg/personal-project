@@ -7,30 +7,35 @@ class ContactWidget extends StatelessWidget {
       color: Color(0xff2D2E32),
       width: double.infinity,
       // height: 450,
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-        children: [
-          Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Text(
-                'Entre em contato conosco',
-                style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 30,
+      child: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 80.0),
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              mainAxisAlignment: MainAxisAlignment.start,
+              children: [
+                Padding(
+                  padding: const EdgeInsets.only(bottom: 50.0),
+                  child: Text(
+                    'Entre em contato conosco',
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 30,
+                    ),
+                  ),
                 ),
-              ),
-              SizedBox(
-                height: 20,
-              ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: [
-                  Column(
-                    children: [
-                      Align(
-                        alignment: Alignment.topCenter,
-                        child: Container(
+                SizedBox(
+                  height: 20,
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  
+                  children: [
+                    Column(
+                      children: [
+                        Container(
                           height: 60,
                           width: 60,
                           decoration: BoxDecoration(
@@ -40,33 +45,30 @@ class ContactWidget extends StatelessWidget {
                               ),
                               shape: BoxShape.circle),
                           child: Image.asset(
-                            '/icon/instagram.png', 
-                            repeat:ImageRepeat.noRepeat,
+                            '/icon/instagram.png',
+                            repeat: ImageRepeat.noRepeat,
                             filterQuality: FilterQuality.high,
                           ),
                         ),
-                      ),
-                      SizedBox(
-                        height: 20,
-                      ),
-                      Text(
-                        'seewave_tecnology',
-                        style: TextStyle(
-                          color: Color(0xffAFAFAF),
-                          fontSize: 15,
+                        SizedBox(
+                          height: 20,
                         ),
-                      ),
-                    ],
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 20.0),
-                    child: Column(
-                      children: [
-                        Align(
-                          alignment: Alignment.topCenter,
-                          child: Container(
-                           height: 60,
-                          width: 60,
+                        Text(
+                          'seewave_tecnology',
+                          style: TextStyle(
+                            color: Color(0xffAFAFAF),
+                            fontSize: 15,
+                          ),
+                        ),
+                      ],
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 140.0),
+                      child: Column(
+                        children: [
+                          Container(
+                            height: 60,
+                            width: 60,
                             decoration: BoxDecoration(
                                 // color: Color(0xff05A2EF),
                                 border: Border.all(
@@ -75,28 +77,24 @@ class ContactWidget extends StatelessWidget {
                                 shape: BoxShape.circle),
                             child: Image.asset(
                               '/icon/whatsapp.png',
-                             
                             ),
                           ),
-                        ),
-                        SizedBox(
-                          height: 20,
-                        ),
-                        Text(
-                          '+55 6398488-7858',
-                          style: TextStyle(
-                            color: Color(0xffAFAFAF),
-                            fontSize: 15,
+                          SizedBox(
+                            height: 20,
                           ),
-                        ),
-                      ],
+                          Text(
+                            '+55 6398488-7858',
+                            style: TextStyle(
+                              color: Color(0xffAFAFAF),
+                              fontSize: 15,
+                            ),
+                          ),
+                        ],
+                      ),
                     ),
-                  ),
-                  Column(
-                    children: [
-                      Align(
-                        alignment: Alignment.topCenter,
-                        child: Container(
+                    Column(
+                      children: [
+                        Container(
                           height: 60,
                           width: 60,
                           decoration: BoxDecoration(
@@ -107,42 +105,38 @@ class ContactWidget extends StatelessWidget {
                               shape: BoxShape.circle),
                           child: Image.asset(
                             '/icon/mail.png',
-                            
                           ),
                         ),
-                      ),
-                      SizedBox(
-                        height: 20,
-                      ),
-                      Text(
-                        'crysleiferreiragomes@gmail.com',
-                        style: TextStyle(
-                          color: Color(0xffAFAFAF),
-                          fontSize: 15,
+                        SizedBox(
+                          height: 20,
                         ),
-                      ),
-                    ],
-                  ),
-                ],
-              ),
-              SizedBox(
-                height: 20,
-              ),
-            ],
-          ),
-          Padding(
-            padding: const EdgeInsets.all(40.0),
-            child: Column(
+                        Text(
+                          'crysleiferreiragomes@gmail.com',
+                          style: TextStyle(
+                            color: Color(0xffAFAFAF),
+                            fontSize: 15,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
+                SizedBox(
+                  height: 20,
+                ),
+              ],
+            ),
+            Column(
               children: [
                 Image.asset(
-                  '/png/people.png',
+                  '/img/people.png',
                   height: 300,
                   width: 300,
                 ),
               ],
             ),
-          ),
-        ],
+          ],
+        ),
       ),
     );
   }

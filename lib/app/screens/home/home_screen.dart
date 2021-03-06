@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:personal_portfolio/app/screens/home/components/contact_widget.dart';
 import 'package:personal_portfolio/app/screens/home/components/header_widget.dart';
 import 'package:personal_portfolio/app/screens/home/components/solutions_widget.dart';
 import 'package:personal_portfolio/app/screens/home/components/testimonial_widget.dart';
+
+import 'components/footer_widget.dart';
 
 class HomeScreen extends StatelessWidget {
   @override
@@ -16,7 +17,7 @@ class HomeScreen extends StatelessWidget {
             HeaderWidget(),
             SolutionsWidget(),
             TestimonialWidget(),
-            ContactWidget()
+            FooterWidget()
           ],
         ),
       ),

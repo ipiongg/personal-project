@@ -5,6 +5,7 @@ import 'package:flutter_modular/flutter_modular.dart';
 import 'package:personal_portfolio/app/screens/home/home_controller.dart';
 
 import '../../../utils/colors.dart';
+import 'contact_widget.dart';
 
 class SolutionsWidget extends StatelessWidget {
   final controller = Modular.get<HomeController>();
@@ -23,7 +24,7 @@ class SolutionsWidget extends StatelessWidget {
               'Desenvolvemos a solução ideal para a sua empresa!',
               style: TextStyle(
                 color: Colors.white,
-                fontSize: 18,
+                fontSize: 30,
               ),
             ),
           ),
@@ -37,47 +38,51 @@ class SolutionsWidget extends StatelessWidget {
           ),
           Padding(
             padding: const EdgeInsets.symmetric(vertical: 20.0),
-            child: Container(
-              width: double.infinity,
-              decoration: BoxDecoration(
-                color: Color(0xff25262A),
-                borderRadius: BorderRadius.all(Radius.circular(12)),
-                border: Border.all(
-                  color: Color(0xff05A2EF),
-                ),
-              ),
-              child: Observer(builder: (_) {
-                return Padding(
-                  padding: const EdgeInsets.all(20),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text(
-                        ['WEB SITES', 'APLICATIVOS MÓVEIS', 'LOJAS VIRTUAIS']
-                            .elementAt(controller.solutionSelected),
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 16,
-                        ),
-                      ),
-                      SizedBox(height: 20),
-                      Text(
-                        [
-                          'Descrição WEB SITES',
-                          'Descrição APLICATIVOS MÓVEIS',
-                          'Descrição LOJAS VIRTUAIS'
-                        ].elementAt(controller.solutionSelected),
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 16,
-                        ),
-                      ),
-                    ],
+            child: Padding(
+              padding: const EdgeInsets.symmetric(horizontal:80.0),
+              child: Container(
+                width: double.infinity,
+                decoration: BoxDecoration(
+                  color: Color(0xff25262A),
+                  borderRadius: BorderRadius.all(Radius.circular(12)),
+                  border: Border.all(
+                    color: Color(0xff05A2EF),
                   ),
-                );
-              }),
+                ),
+                child: Observer(builder: (_) {
+                  return Padding(
+                    padding: const EdgeInsets.all(20),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          ['WEB SITES', 'APLICATIVOS MÓVEIS', 'LOJAS VIRTUAIS']
+                              .elementAt(controller.solutionSelected),
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 16,
+                          ),
+                        ),
+                        SizedBox(height: 20),
+                        Text(
+                          [
+                            'Descrição WEB SITES',
+                            'Descrição APLICATIVOS MÓVEIS',
+                            'Descrição LOJAS VIRTUAIS'
+                          ].elementAt(controller.solutionSelected),
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 16,
+                          ),
+                        ),
+                      ],
+                    ),
+                  );
+                }),
+              ),
             ),
-          )
+          ),
+          ContactWidget(),
         ],
       ),
     );
