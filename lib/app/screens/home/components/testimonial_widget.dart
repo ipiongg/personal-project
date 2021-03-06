@@ -14,14 +14,17 @@ class TestimonialWidget extends StatelessWidget {
               'Testemonial',
               style: TextStyle(
                 color: Color(0xffFFFFFF),
-                fontSize: 30,
+                fontSize: 20,
               ),
             ),
-            Text(
-              'O que os clientes falam sobre nós',
-              style: TextStyle(
-                color: Color(0xffAFAFAF),
-                fontSize: 18,
+            Padding(
+              padding: const EdgeInsets.only(top:10.0),
+              child: Text(
+                'O que os clientes falam sobre nós',
+                style: TextStyle(
+                  color: Color(0xffAFAFAF),
+                  fontSize: 16,
+                ),
               ),
             ),
             Padding(
@@ -70,7 +73,7 @@ class TestimonialWidget extends StatelessWidget {
                                   'Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatisLorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis',
                                   style: TextStyle(
                                     color: Color(0xffAFAFAF),
-                                    fontSize: 18,
+                                    fontSize: 16,
                                   ),
                                   textAlign: TextAlign.center,
                                 ),

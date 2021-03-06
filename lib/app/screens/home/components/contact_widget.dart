@@ -22,7 +22,7 @@ class ContactWidget extends StatelessWidget {
                     'Entre em contato conosco',
                     style: TextStyle(
                       color: Colors.white,
-                      fontSize: 30,
+                      fontSize: 20,
                     ),
                   ),
                 ),
@@ -57,7 +57,7 @@ class ContactWidget extends StatelessWidget {
                           'seewave_tecnology',
                           style: TextStyle(
                             color: Color(0xffAFAFAF),
-                            fontSize: 15,
+                            fontSize: 16,
                           ),
                         ),
                       ],
@@ -85,7 +85,7 @@ class ContactWidget extends StatelessWidget {
                             '+55 6398488-7858',
                             style: TextStyle(
                               color: Color(0xffAFAFAF),
-                              fontSize: 15,
+                              fontSize: 16,
                             ),
                           ),
                         ],
@@ -113,7 +113,7 @@ class ContactWidget extends StatelessWidget {
                           'crysleiferreiragomes@gmail.com',
                           style: TextStyle(
                             color: Color(0xffAFAFAF),
-                            fontSize: 15,
+                            fontSize: 16,
                           ),
                         ),
                       ],

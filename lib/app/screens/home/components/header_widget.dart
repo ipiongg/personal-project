@@ -16,7 +16,7 @@ class _HeaderWidgetState extends State<HeaderWidget> {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              Image(image: AssetImage('/img/logo.png'), height: 50),
+              Image(image: AssetImage('/img/logo.png'), height: 55),
               Container(
                 child: Row(
                   children: [
