@@ -38,14 +38,14 @@ class TestimonialWidget extends StatelessWidget {
                           Align(
                             alignment: Alignment.topCenter,
                             child: CircleAvatar(
-                              backgroundImage: AssetImage("/png/elon.png"),
+                              backgroundImage: AssetImage("/img/elon.png"),
                               radius: 70,
                               backgroundColor: Color(0xff27273d),
                             ),
                           ),
                           Center(
                             child: Image.asset(
-                              '/png/virgula.png',
+                              '/img/virgula.png',
                               height: 50,
                               width: 50,
                             ),
