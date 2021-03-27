@@ -5,7 +5,7 @@ class Section {
   IconData icon;
 
   Section({
-    @required this.name,
-    @required this.icon,
+    required this.name,
+    required this.icon,
   });
 }

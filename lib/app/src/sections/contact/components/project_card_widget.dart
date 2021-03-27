@@ -4,18 +4,18 @@ import 'package:personal_portfolio/app/utils/theme/app_colors.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class ProjectCardWidget extends StatefulWidget {
-  final String projectIcon;
-  final IconData projectIconData;
-  final String projectTitle;
-  final String projectDescription;
-  final String projectLink;
-  final double cardWidth;
-  final double cardHeight;
-  final String backImage;
-  final Widget bottomWidget;
+  final String? projectIcon;
+  final IconData? projectIconData;
+  final String? projectTitle;
+  final String? projectDescription;
+  final String? projectLink;
+  final double? cardWidth;
+  final double? cardHeight;
+  final String? backImage;
+  final Widget? bottomWidget;
 
   const ProjectCardWidget(
-      {Key key,
+      {Key? key,
       this.backImage,
       this.bottomWidget,
       this.projectIcon,
@@ -38,7 +38,7 @@ class _ProjectCardWidgetState extends State<ProjectCardWidget> {
     double height = MediaQuery.of(context).size.height;
     double width = MediaQuery.of(context).size.width;
     return InkWell(
-      onTap: () => launch(widget.projectLink),
+      onTap: () => launch(widget.projectLink!),
       onHover: (isHovering) {
         if (isHovering) {
           setState(() {
@@ -74,7 +74,7 @@ class _ProjectCardWidgetState extends State<ProjectCardWidget> {
               children: [
                 widget.projectIcon != null
                     ? Image.asset(
-                        widget.projectIcon,
+                        widget.projectIcon!,
                         height: height * 0.1,
                       )
                     : Container(),
@@ -89,7 +89,7 @@ class _ProjectCardWidgetState extends State<ProjectCardWidget> {
                   height: height * 0.02,
                 ),
                 Text(
-                  widget.projectTitle,
+                  widget.projectTitle!,
                   textAlign: TextAlign.center,
                   style: GoogleFonts.montserrat(
                     fontSize: height * 0.02,
@@ -101,7 +101,7 @@ class _ProjectCardWidgetState extends State<ProjectCardWidget> {
                   height: height * 0.01,
                 ),
                 Text(
-                  widget.projectDescription,
+                  widget.projectDescription!,
                   textAlign: TextAlign.center,
                   style: GoogleFonts.montserrat(
                       fontSize: height * 0.015,
@@ -121,7 +121,7 @@ class _ProjectCardWidgetState extends State<ProjectCardWidget> {
               child: FittedBox(
                 fit: BoxFit.fill,
                 child: widget.backImage != null
-                    ? Image.asset(widget.backImage)
+                    ? Image.asset(widget.backImage!)
                     : Container(),
               ),
             ),

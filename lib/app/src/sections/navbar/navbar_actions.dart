@@ -10,11 +10,11 @@ class NavbarActions extends StatelessWidget {
   final Function(int) scroll;
 
   const NavbarActions(
-      {Key key,
-      @required this.label,
-      @required this.index,
-      @required this.icon,
-      @required this.scroll})
+      {Key? key,
+      required this.label,
+      required this.index,
+      required this.icon,
+      required this.scroll})
       : super(key: key);
   @override
   Widget build(BuildContext context) {

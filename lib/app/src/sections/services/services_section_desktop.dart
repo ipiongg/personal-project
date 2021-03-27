@@ -66,7 +66,7 @@ class ServicesSectionDesktop extends StatelessWidget {
                       serviceIcon: 'assets/img/add-to-cart.png',
                       serviceTitle: 'Lojas virtuais',
                       serviceDescription:
-                          'Plataforma personalizada para aumentar suas vendas online.',
+                          'Plataformas personalizadas para aumentar suas vendas online.',
                     ),
                   ),
                 ],

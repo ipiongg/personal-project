@@ -8,7 +8,7 @@ class SocialMediaWidget extends StatelessWidget {
   final double height;
   final double horizontalPadding;
 
-  SocialMediaWidget({@required this.height, @required this.horizontalPadding});
+  SocialMediaWidget({required this.height, required this.horizontalPadding});
   @override
   Widget build(BuildContext context) {
     return Row(
