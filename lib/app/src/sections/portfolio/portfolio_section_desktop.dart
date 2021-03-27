@@ -3,7 +3,6 @@ import 'package:personal_portfolio/app/src/sections/portfolio/components/project
 import 'package:personal_portfolio/app/utils/animations/bottom_animation.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:personal_portfolio/app/utils/constants.dart';
-import 'package:personal_portfolio/app/utils/theme/app_colors.dart';
 
 class PortfolioSectionDesktop extends StatelessWidget {
   @override

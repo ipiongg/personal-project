@@ -13,15 +13,15 @@ class ContactSectionMobile extends StatelessWidget {
       child: Column(
         children: [
           Text(
-            "\nContact",
+            "\nContato",
             style: GoogleFonts.montserrat(
               fontSize: height * 0.06,
-              fontWeight: FontWeight.w100,
+              fontWeight: FontWeight.w300,
               letterSpacing: 1.0,
             ),
           ),
           Text(
-            "Let's get in touch and build something together :)\n\n",
+            "Entre em contato e vamos construir algo novo juntos!\n\n",
             style: GoogleFonts.montserrat(fontWeight: FontWeight.w200),
             textAlign: TextAlign.center,
           ),

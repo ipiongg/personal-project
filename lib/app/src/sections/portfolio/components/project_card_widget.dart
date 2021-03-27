@@ -94,7 +94,7 @@ class _ProjectCardWidgetState extends State<ProjectCardWidget> {
                   style: GoogleFonts.montserrat(
                     fontSize: height * 0.02,
                     letterSpacing: 1.5,
-                    fontWeight: FontWeight.w400,
+                    fontWeight: FontWeight.w300,
                   ),
                 ),
                 SizedBox(
@@ -106,7 +106,7 @@ class _ProjectCardWidgetState extends State<ProjectCardWidget> {
                   style: GoogleFonts.montserrat(
                       fontSize: height * 0.015,
                       letterSpacing: 2.0,
-                      fontWeight: FontWeight.w100,
+                      fontWeight: FontWeight.w200,
                       height: width >= 600 ? 2.0 : 1.5),
                 ),
                 SizedBox(

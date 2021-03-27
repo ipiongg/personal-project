@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
+//Contatos
 const String kInstagramLink = 'https://www.instagram.com/seewave.tech/';
 const String kWhatsAppLink = 'https://web.whatsapp.com/';
 const String kLinkedinLink = 'https://br.linkedin.com/';
@@ -104,19 +105,19 @@ final kProjectsLinks = [
 
 // Contact
 final kContactIcons = [
-  Icons.home,
+  Icons.photo_camera,
   Icons.phone,
   Icons.mail,
 ];
 
 final kContactTitles = [
-  "Location",
-  "Phone",
-  "Email",
+  "Instagram",
+  "Telefone",
+  "E-mail",
 ];
 
 final kContactDetails = [
-  "Attock, Pakistan",
-  "(+92) 346 0159889",
-  "hamza.6.shakeel@gmail.com"
+  "@seewave.tech",
+  "+55 (63) 00000-0000",
+  "contato@seewave.tech"
 ];
