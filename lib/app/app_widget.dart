@@ -1,15 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import 'package:flutter_modular/flutter_modular.dart';
-import 'package:personal_portfolio/app/utils/theme.dart';
+
+import 'src/main_section.dart';
+import 'utils/theme/app_theme.dart';
 
 class AppWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      theme: theme(context),
-      initialRoute: '/',
-    ).modular();
+      title: 'see!WAVE',
+      theme: AppTheme.theme,
+      home: MainSection(),
+    );
   }
 }
