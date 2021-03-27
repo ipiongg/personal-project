@@ -1,7 +1,6 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:personal_portfolio/app/src/sections/services/components/service_card_widget.dart';
-import 'package:personal_portfolio/app/utils/constants.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class ServiceSectionMobile extends StatelessWidget {
@@ -13,7 +12,7 @@ class ServiceSectionMobile extends StatelessWidget {
       child: Column(
         children: [
           Text(
-            "\nWhat I Do",
+            "\nServiços",
             style: GoogleFonts.montserrat(
               fontSize: height * 0.06,
               fontWeight: FontWeight.w100,
@@ -21,21 +20,21 @@ class ServiceSectionMobile extends StatelessWidget {
             ),
           ),
           Text(
-            "I may not be perfect, but I'm surely of some help :)\n\n",
+            "Desenvolvemos a solução ideal para a sua empresa!\n\n",
             textAlign: TextAlign.center,
             style: GoogleFonts.montserrat(fontWeight: FontWeight.w200),
           ),
           CarouselSlider.builder(
-            itemCount: 5,
+            itemCount: 3,
             itemBuilder: (BuildContext context, int itemIndex, int i) =>
                 Padding(
               padding: const EdgeInsets.symmetric(vertical: 10.0),
               child: ServiceCardWidget(
                 cardWidth: width < 650 ? width * 0.8 : width * 0.5,
-                serviceIcon: kServicesIcons[i],
-                serviceTitle: kServicesTitles[i],
-                serviceDescription: kServicesDescriptions[i],
-                serviceLink: kServicesLinks[i],
+                serviceIcon: 'assets/img/add-to-cart.png',
+                serviceTitle: 'Aplicativos móveis',
+                serviceDescription:
+                    'Aplicativos personalizados para o seu smarthphone.',
               ),
             ),
             options: CarouselOptions(

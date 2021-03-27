@@ -49,7 +49,6 @@ flutter:
   assets:
     - assets/
     - assets/services/
-    - assets/projects/
     - assets/img/
     - assets/gif/
     - assets/svg/
