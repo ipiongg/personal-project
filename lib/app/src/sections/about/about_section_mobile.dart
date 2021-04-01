@@ -12,7 +12,7 @@ class AboutSectionMobile extends StatelessWidget {
     return Container(
       padding: EdgeInsets.symmetric(
           horizontal: width * 0.02, vertical: height * 0.02),
-      color: Colors.grey[900],
+      color: Color(0xff2D2E32),
       child: Column(
         children: [
           Text(
