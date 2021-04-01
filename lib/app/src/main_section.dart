@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:personal_portfolio/app/src/main_section_controller.dart';
+import 'package:personal_portfolio/app/src/sections/navbar/drawer_widget.dart';
 import 'package:personal_portfolio/app/src/sections/navbar/navbar_actions.dart';
 import 'package:personal_portfolio/app/utils/animations/entrance_fader.dart';
 import 'package:personal_portfolio/app/utils/theme/app_colors.dart';
@@ -20,12 +21,14 @@ class _MainSectionState extends State<MainSection> {
       backgroundColor: Color(0xff25262A),
       extendBodyBehindAppBar: true,
       appBar: MediaQuery.of(context).size.width > 760
-          ? _navbarDesktop()
+          ? _navbarDesktop() as PreferredSizeWidget?
           : AppBar(
               backgroundColor: Colors.transparent,
               elevation: 0.0,
             ),
-      drawer: MediaQuery.of(context).size.width < 760 ? _navbarMobile() : null,
+      drawer: MediaQuery.of(context).size.width < 760
+          ? DrawerWidget(controller: controller)
+          : null,
       body: Container(
         height: MediaQuery.of(context).size.height,
         width: MediaQuery.of(context).size.width,
@@ -37,9 +40,7 @@ class _MainSectionState extends State<MainSection> {
             itemScrollController: controller.itemScrollController,
             itemPositionsListener: controller.itemPositionListener,
             itemCount: 8,
-            itemBuilder: (context, index) {
-              return controller.sectionWidget(index);
-            },
+            itemBuilder: (context, index) => controller.sectionWidget(index),
           ),
         ),
       ),
@@ -50,20 +51,14 @@ class _MainSectionState extends State<MainSection> {
     return AppBar(
       elevation: 0.0,
       backgroundColor: Colors.transparent,
-      title: MediaQuery.of(context).size.width < 740
-          ? EntranceFader(
-              duration: Duration(seconds: 1),
-              offset: Offset(0, -20),
-              delay: Duration(seconds: 3),
-              child: NavbarLogo())
-          : EntranceFader(
-              offset: Offset(0, -20),
-              duration: Duration(seconds: 1),
-              delay: Duration(seconds: 3),
-              child: NavbarLogo(
-                height: MediaQuery.of(context).size.height * 0.035,
-              ),
-            ),
+      title: EntranceFader(
+        offset: Offset(0, -20),
+        duration: Duration(seconds: 1),
+        delay: Duration(seconds: 3),
+        child: NavbarLogo(
+          height: MediaQuery.of(context).size.height * 0.035,
+        ),
+      ),
       actions: [
         for (int i = 0; i < controller.sections.length; i++)
           NavbarActions(
@@ -73,32 +68,6 @@ class _MainSectionState extends State<MainSection> {
             scroll: controller.scroll,
           )
       ],
-    );
-  }
-
-  Widget _navbarMobile() {
-    return Drawer(
-      child: Padding(
-        padding: const EdgeInsets.fromLTRB(0, 25.0, 0, 0),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Center(
-              child: NavbarLogo(
-                height: 28,
-              ),
-            ),
-            SizedBox(height: 25),
-            for (int i = 0; i < controller.sections.length; i++)
-              NavbarActions(
-                label: controller.sections[i].name,
-                index: i,
-                icon: controller.sections[i].icon,
-                scroll: controller.scroll,
-              )
-          ],
-        ),
-      ),
     );
   }
 }

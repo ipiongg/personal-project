@@ -5,14 +5,14 @@ import 'package:url_launcher/url_launcher.dart';
 
 class ServiceCardWidget extends StatefulWidget {
   final String serviceIcon;
-  final String serviceTitle;
-  final String serviceDescription;
-  final String serviceLink;
-  final double cardWidth;
-  final double cardHeight;
+  final String? serviceTitle;
+  final String? serviceDescription;
+  final String? serviceLink;
+  final double? cardWidth;
+  final double? cardHeight;
 
   const ServiceCardWidget(
-      {@required this.serviceIcon,
+      {required this.serviceIcon,
       this.serviceTitle,
       this.serviceDescription,
       this.serviceLink,
@@ -28,9 +28,9 @@ class _ServiceCardWidgetState extends State<ServiceCardWidget> {
   @override
   Widget build(BuildContext context) {
     double height = MediaQuery.of(context).size.height;
-    double width = MediaQuery.of(context).size.width;
+    // double width = MediaQuery.of(context).size.width;
     return InkWell(
-      onTap: () => launch(widget.serviceLink),
+      onTap: () => launch(widget.serviceLink!),
       onHover: (isHovering) {
         if (isHovering) {
           setState(() {
@@ -63,13 +63,10 @@ class _ServiceCardWidgetState extends State<ServiceCardWidget> {
           children: [
             Image.asset(
               widget.serviceIcon,
-              height: height * 0.1,
-            ),
-            SizedBox(
-              height: height * 0.02,
+              height: height * 0.24,
             ),
             Text(
-              widget.serviceTitle,
+              widget.serviceTitle!,
               textAlign: TextAlign.center,
               style: GoogleFonts.montserrat(
                 fontSize: height * 0.02,
@@ -82,13 +79,13 @@ class _ServiceCardWidgetState extends State<ServiceCardWidget> {
             ),
             Expanded(
               child: Text(
-                widget.serviceDescription,
+                widget.serviceDescription!,
                 textAlign: TextAlign.center,
                 style: GoogleFonts.montserrat(
-                    fontSize: height * 0.015,
-                    letterSpacing: 2.0,
-                    fontWeight: FontWeight.w100,
-                    height: width < 900 ? 2.3 : 1.5),
+                  fontSize: height * 0.018,
+                  letterSpacing: .5,
+                  fontWeight: FontWeight.w200,
+                ),
               ),
             )
           ],

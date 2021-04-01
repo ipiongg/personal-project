@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:personal_portfolio/app/utils/animations/bottom_animation.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:personal_portfolio/app/utils/constants.dart';
-
 import 'components/service_card_widget.dart';
 
 class ServicesSectionDesktop extends StatelessWidget {
@@ -17,7 +15,7 @@ class ServicesSectionDesktop extends StatelessWidget {
       child: Column(
         children: [
           Text(
-            "\nWhat I Do",
+            "\nServiços",
             style: GoogleFonts.montserrat(
               fontSize: height * 0.06,
               fontWeight: FontWeight.w100,
@@ -25,7 +23,7 @@ class ServicesSectionDesktop extends StatelessWidget {
             ),
           ),
           Text(
-            "I may not be perfect, but I'm surely of some help :)\n\n",
+            "Desenvolvemos a solução ideal para a sua empresa!\n\n",
             style: GoogleFonts.montserrat(fontWeight: FontWeight.w200),
           ),
           Column(
@@ -39,10 +37,10 @@ class ServicesSectionDesktop extends StatelessWidget {
                     child: ServiceCardWidget(
                       cardWidth: width < 1200 ? width * 0.3 : width * 0.22,
                       cardHeight: width < 1200 ? height * 0.4 : height * 0.35,
-                      serviceIcon: kServicesIcons[0],
-                      serviceTitle: kServicesTitles[0],
-                      serviceDescription: kServicesDescriptions[0],
-                      serviceLink: kServicesLinks[0],
+                      serviceIcon: 'assets/img/add-to-cart.png',
+                      serviceTitle: 'Aplicativos móveis',
+                      serviceDescription:
+                          'Aplicativos personalizados para o seu smarthphone.',
                     ),
                   ),
                   SizedBox(
@@ -52,10 +50,10 @@ class ServicesSectionDesktop extends StatelessWidget {
                     child: ServiceCardWidget(
                       cardWidth: width < 1200 ? width * 0.3 : width * 0.22,
                       cardHeight: width < 1200 ? height * 0.4 : height * 0.35,
-                      serviceIcon: kServicesIcons[1],
-                      serviceTitle: kServicesTitles[1],
-                      serviceDescription: kServicesDescriptions[1],
-                      serviceLink: kServicesLinks[1],
+                      serviceIcon: 'assets/img/add-to-cart.png',
+                      serviceTitle: 'Websites',
+                      serviceDescription:
+                          'Projetos personalizados para a sua aplicação web.',
                     ),
                   ),
                   SizedBox(
@@ -65,41 +63,10 @@ class ServicesSectionDesktop extends StatelessWidget {
                     child: ServiceCardWidget(
                       cardWidth: width < 1200 ? width * 0.3 : width * 0.22,
                       cardHeight: width < 1200 ? height * 0.4 : height * 0.35,
-                      serviceIcon: kServicesIcons[2],
-                      serviceTitle: kServicesTitles[2],
-                      serviceDescription: kServicesDescriptions[2],
-                      serviceLink: kServicesLinks[2],
-                    ),
-                  ),
-                ],
-              ),
-              SizedBox(
-                height: height * 0.04,
-              ),
-              Row(
-                mainAxisSize: MainAxisSize.min,
-                children: [
-                  WidgetAnimator(
-                    child: ServiceCardWidget(
-                      cardWidth: width < 1200 ? width * 0.3 : width * 0.22,
-                      cardHeight: width < 1200 ? height * 0.4 : height * 0.35,
-                      serviceIcon: kServicesIcons[3],
-                      serviceTitle: kServicesTitles[3],
-                      serviceDescription: kServicesDescriptions[3],
-                      serviceLink: kServicesLinks[3],
-                    ),
-                  ),
-                  SizedBox(
-                    width: width * 0.03,
-                  ),
-                  WidgetAnimator(
-                    child: ServiceCardWidget(
-                      cardWidth: width < 1200 ? width * 0.3 : width * 0.22,
-                      cardHeight: width < 1200 ? height * 0.4 : height * 0.35,
-                      serviceIcon: kServicesIcons[4],
-                      serviceTitle: kServicesTitles[4],
-                      serviceDescription: kServicesDescriptions[4],
-                      serviceLink: kServicesLinks[4],
+                      serviceIcon: 'assets/img/add-to-cart.png',
+                      serviceTitle: 'Lojas virtuais',
+                      serviceDescription:
+                          'Plataformas personalizadas para aumentar suas vendas online.',
                     ),
                   ),
                 ],

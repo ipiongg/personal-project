@@ -6,7 +6,6 @@ import 'package:scrollable_positioned_list/scrollable_positioned_list.dart';
 import 'sections/about/about_section.dart';
 import 'sections/contact/contact_section.dart';
 import 'sections/home/home_section.dart';
-import 'sections/portfolio/portfolio_section.dart';
 import 'sections/services/services_section.dart';
 import 'sections/footer/footer_section.dart';
 
@@ -20,7 +19,6 @@ class MainSectionController {
     Section(name: "Início", icon: Icons.home),
     Section(name: "Sobre", icon: Icons.person),
     Section(name: "Serviços", icon: Icons.settings),
-    Section(name: "Projetos", icon: Icons.build),
     Section(name: "Contato", icon: Icons.phone),
   ];
 
@@ -36,8 +34,6 @@ class MainSectionController {
     } else if (i == 2) {
       return ServicesSection();
     } else if (i == 3) {
-      return PortfolioSection();
-    } else if (i == 4) {
       return ContactSection();
     } else if (i == 5) {
       return SizedBox(

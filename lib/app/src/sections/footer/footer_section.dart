@@ -14,7 +14,7 @@ class FooterSection extends StatelessWidget {
       color: Colors.grey[900],
       child: Center(
         child: Text(
-          "Copyright ${DateTime.now().year} see!Wave | Todos os direitos reservados.",
+          "Copyright ${DateTime.now().year} see!WAVE | Todos os direitos reservados.",
           style: GoogleFonts.montserrat(fontWeight: FontWeight.w100),
         ),
       ),

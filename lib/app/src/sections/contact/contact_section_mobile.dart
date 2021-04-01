@@ -1,8 +1,9 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
-import 'package:personal_portfolio/app/src/sections/portfolio/components/project_card_widget.dart';
 import 'package:personal_portfolio/app/utils/constants.dart';
 import 'package:google_fonts/google_fonts.dart';
+
+import 'components/project_card_widget.dart';
 
 class ContactSectionMobile extends StatelessWidget {
   @override

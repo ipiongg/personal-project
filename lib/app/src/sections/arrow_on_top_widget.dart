@@ -4,7 +4,7 @@ import 'package:personal_portfolio/app/utils/theme/app_colors.dart';
 class ArrowOnTopWidget extends StatefulWidget {
   final VoidCallback onPressed;
 
-  const ArrowOnTopWidget({Key key, @required this.onPressed}) : super(key: key);
+  const ArrowOnTopWidget({Key? key, required this.onPressed}) : super(key: key);
 
   @override
   _ArrowOnTopWidgetState createState() => _ArrowOnTopWidgetState();
