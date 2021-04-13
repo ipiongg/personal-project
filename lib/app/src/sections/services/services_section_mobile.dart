@@ -15,7 +15,7 @@ class ServiceSectionMobile extends StatelessWidget {
             "\nServiços",
             style: GoogleFonts.montserrat(
               fontSize: height * 0.06,
-              fontWeight: FontWeight.w100,
+              fontWeight: FontWeight.w300,
               letterSpacing: 1.0,
             ),
           ),
@@ -31,10 +31,21 @@ class ServiceSectionMobile extends StatelessWidget {
               padding: const EdgeInsets.symmetric(vertical: 10.0),
               child: ServiceCardWidget(
                 cardWidth: width < 650 ? width * 0.8 : width * 0.5,
-                serviceIcon: 'assets/img/add-to-cart.png',
-                serviceTitle: 'Aplicativos móveis',
-                serviceDescription:
-                    'Aplicativos personalizados para o seu smarthphone.',
+                serviceIcon: [
+                  'assets/json/mobile-app.json',
+                  'assets/json/website-interface.json',
+                  'assets/json/shopping-and-delivery.json'
+                ].elementAt(itemIndex),
+                serviceTitle: [
+                  'Aplicativos móveis',
+                  'Websites',
+                  'Lojas virtuais',
+                ].elementAt(itemIndex),
+                serviceDescription: [
+                  'Aplicativos personalizados para smarthphones.',
+                  'Projetos personalizados para a sua aplicação web.',
+                  'Plataformas personalizadas para aumentar suas vendas online.',
+                ].elementAt(itemIndex),
               ),
             ),
             options: CarouselOptions(

@@ -38,6 +38,8 @@ class _ArrowOnTopWidgetState extends State<ArrowOnTopWidget> {
                 topLeft: Radius.circular(8.0),
                 bottomLeft: Radius.circular(8.0),
               ),
+              border:
+                  isHover ? Border.all(color: AppColors.primaryColor) : null,
               boxShadow: isHover
                   ? [
                       BoxShadow(

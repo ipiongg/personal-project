@@ -18,8 +18,8 @@ class AboutSectionDesktop extends StatelessWidget {
           Text(
             "\nSobre nós",
             style: GoogleFonts.montserrat(
-              fontSize: height * 0.075,
-              fontWeight: FontWeight.w100,
+              fontSize: height * 0.06,
+              fontWeight: FontWeight.w300,
             ),
           ),
           SizedBox(

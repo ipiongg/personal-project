@@ -57,6 +57,9 @@ class _ProjectCardWidgetState extends State<ProjectCardWidget> {
         decoration: BoxDecoration(
             color: Colors.grey[900],
             borderRadius: BorderRadius.circular(8.0),
+            border: isHover
+                ? Border.all(width: 0.7, color: AppColors.primaryColor)
+                : null,
             boxShadow: isHover
                 ? [
                     BoxShadow(

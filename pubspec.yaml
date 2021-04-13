@@ -30,6 +30,7 @@ dependencies:
   scrollable_positioned_list: ^0.2.0-nullsafety.0
   animated_text_kit: ^4.1.0
   flutter_svg: ^0.21.0-nullsafety.0
+  lottie: ^1.0.1
   
 dev_dependencies:
   flutter_test:
@@ -51,6 +52,8 @@ flutter:
     - assets/img/
     - assets/gif/
     - assets/svg/
+    - assets/json/
+
   
   #   - images/a_dot_ham.jpeg
   # An image asset can refer to one or more resolution-specific "variants", see

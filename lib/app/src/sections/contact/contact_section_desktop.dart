@@ -20,7 +20,6 @@ class ContactSectionDesktop extends StatelessWidget {
             style: GoogleFonts.montserrat(
               fontSize: height * 0.06,
               fontWeight: FontWeight.w300,
-              letterSpacing: 1.0,
             ),
           ),
           Text(

@@ -19,7 +19,7 @@ class _MainSectionState extends State<MainSection> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Color(0xff25262A),
-      extendBodyBehindAppBar: true,
+      extendBodyBehindAppBar: false,
       appBar: MediaQuery.of(context).size.width > 760
           ? _navbarDesktop() as PreferredSizeWidget?
           : AppBar(

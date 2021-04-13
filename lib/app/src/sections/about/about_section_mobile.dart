@@ -19,8 +19,7 @@ class AboutSectionMobile extends StatelessWidget {
             "Sobre nós",
             style: GoogleFonts.montserrat(
               fontSize: height * 0.06,
-              fontWeight: FontWeight.w100,
-              letterSpacing: 1.0,
+              fontWeight: FontWeight.w300,
             ),
           ),
           SizedBox(

@@ -18,8 +18,7 @@ class ServicesSectionDesktop extends StatelessWidget {
             "\nServiços",
             style: GoogleFonts.montserrat(
               fontSize: height * 0.06,
-              fontWeight: FontWeight.w100,
-              letterSpacing: 1.0,
+              fontWeight: FontWeight.w300,
             ),
           ),
           Text(
@@ -37,10 +36,10 @@ class ServicesSectionDesktop extends StatelessWidget {
                     child: ServiceCardWidget(
                       cardWidth: width < 1200 ? width * 0.3 : width * 0.22,
                       cardHeight: width < 1200 ? height * 0.4 : height * 0.35,
-                      serviceIcon: 'assets/img/add-to-cart.png',
+                      serviceIcon: 'assets/json/mobile-app.json',
                       serviceTitle: 'Aplicativos móveis',
                       serviceDescription:
-                          'Aplicativos personalizados para o seu smarthphone.',
+                          'Aplicativos personalizados para smarthphones.',
                     ),
                   ),
                   SizedBox(
@@ -50,7 +49,7 @@ class ServicesSectionDesktop extends StatelessWidget {
                     child: ServiceCardWidget(
                       cardWidth: width < 1200 ? width * 0.3 : width * 0.22,
                       cardHeight: width < 1200 ? height * 0.4 : height * 0.35,
-                      serviceIcon: 'assets/img/add-to-cart.png',
+                      serviceIcon: 'assets/json/website-interface.json',
                       serviceTitle: 'Websites',
                       serviceDescription:
                           'Projetos personalizados para a sua aplicação web.',
@@ -63,7 +62,7 @@ class ServicesSectionDesktop extends StatelessWidget {
                     child: ServiceCardWidget(
                       cardWidth: width < 1200 ? width * 0.3 : width * 0.22,
                       cardHeight: width < 1200 ? height * 0.4 : height * 0.35,
-                      serviceIcon: 'assets/img/add-to-cart.png',
+                      serviceIcon: 'assets/json/shopping-and-delivery.json',
                       serviceTitle: 'Lojas virtuais',
                       serviceDescription:
                           'Plataformas personalizadas para aumentar suas vendas online.',
