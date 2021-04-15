@@ -72,8 +72,8 @@ class _ServiceCardWidgetState extends State<ServiceCardWidget> {
               widget.serviceTitle!,
               textAlign: TextAlign.center,
               style: GoogleFonts.montserrat(
-                fontSize: height * 0.025,
-                fontWeight: FontWeight.w400,
+                fontSize: 15,
+                fontWeight: FontWeight.w500,
               ),
             ),
             Expanded(
@@ -81,8 +81,7 @@ class _ServiceCardWidgetState extends State<ServiceCardWidget> {
                 widget.serviceDescription!,
                 textAlign: TextAlign.center,
                 style: GoogleFonts.montserrat(
-                  fontSize: height * 0.02,
-                  letterSpacing: .5,
+                  fontSize: 15,
                   fontWeight: FontWeight.w200,
                 ),
               ),

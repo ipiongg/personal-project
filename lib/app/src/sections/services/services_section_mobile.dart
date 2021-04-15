@@ -14,15 +14,17 @@ class ServiceSectionMobile extends StatelessWidget {
           Text(
             "\nServiços",
             style: GoogleFonts.montserrat(
-              fontSize: height * 0.06,
-              fontWeight: FontWeight.w300,
-              letterSpacing: 1.0,
+              fontSize: 30,
+              fontWeight: FontWeight.w400,
             ),
           ),
           Text(
             "Desenvolvemos a solução ideal para a sua empresa!\n\n",
             textAlign: TextAlign.center,
-            style: GoogleFonts.montserrat(fontWeight: FontWeight.w200),
+            style: GoogleFonts.montserrat(
+              fontSize: 15,
+              fontWeight: FontWeight.w200,
+            ),
           ),
           CarouselSlider.builder(
             itemCount: 3,
@@ -44,7 +46,7 @@ class ServiceSectionMobile extends StatelessWidget {
                 serviceDescription: [
                   'Aplicativos personalizados para smarthphones.',
                   'Projetos personalizados para a sua aplicação web.',
-                  'Plataformas personalizadas para aumentar suas vendas online.',
+                  'Plataformas personalizadas para aumentar as suas vendas online.',
                 ].elementAt(itemIndex),
               ),
             ),

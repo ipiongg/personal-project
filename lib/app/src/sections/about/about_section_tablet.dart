@@ -19,8 +19,8 @@ class AboutSectionTablet extends StatelessWidget {
           Text(
             "\nSobre nós",
             style: GoogleFonts.montserrat(
-              fontSize: height * 0.06,
-              fontWeight: FontWeight.w300,
+              fontSize: 30,
+              fontWeight: FontWeight.w400,
             ),
           ),
           SizedBox(
@@ -32,7 +32,6 @@ class AboutSectionTablet extends StatelessWidget {
               Expanded(
                 flex: 3,
                 child: AboutTextWidget(
-                  fontSize: 12,
                   textAlign: TextAlign.left,
                 ),
               ),

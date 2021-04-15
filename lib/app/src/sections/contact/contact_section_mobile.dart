@@ -16,13 +16,16 @@ class ContactSectionMobile extends StatelessWidget {
           Text(
             "\nContato",
             style: GoogleFonts.montserrat(
-              fontSize: height * 0.06,
-              fontWeight: FontWeight.w300,
+              fontSize: 30,
+              fontWeight: FontWeight.w400,
             ),
           ),
           Text(
             "Entre em contato e vamos construir algo novo juntos!\n\n",
-            style: GoogleFonts.montserrat(fontWeight: FontWeight.w200),
+            style: GoogleFonts.montserrat(
+              fontSize: 15,
+              fontWeight: FontWeight.w200,
+            ),
             textAlign: TextAlign.center,
           ),
           CarouselSlider.builder(

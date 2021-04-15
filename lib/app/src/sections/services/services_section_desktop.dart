@@ -17,13 +17,16 @@ class ServicesSectionDesktop extends StatelessWidget {
           Text(
             "\nServiços",
             style: GoogleFonts.montserrat(
-              fontSize: height * 0.06,
-              fontWeight: FontWeight.w300,
+              fontSize: 30,
+              fontWeight: FontWeight.w400,
             ),
           ),
           Text(
             "Desenvolvemos a solução ideal para a sua empresa!\n\n",
-            style: GoogleFonts.montserrat(fontWeight: FontWeight.w200),
+            style: GoogleFonts.montserrat(
+              fontSize: 15,
+              fontWeight: FontWeight.w200,
+            ),
           ),
           Column(
             children: [
@@ -65,7 +68,7 @@ class ServicesSectionDesktop extends StatelessWidget {
                       serviceIcon: 'assets/json/shopping-and-delivery.json',
                       serviceTitle: 'Lojas virtuais',
                       serviceDescription:
-                          'Plataformas personalizadas para aumentar suas vendas online.',
+                          'Plataformas personalizadas para aumentar as suas vendas online.',
                     ),
                   ),
                 ],

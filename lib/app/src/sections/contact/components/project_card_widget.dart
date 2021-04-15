@@ -36,7 +36,6 @@ class _ProjectCardWidgetState extends State<ProjectCardWidget> {
   @override
   Widget build(BuildContext context) {
     double height = MediaQuery.of(context).size.height;
-    double width = MediaQuery.of(context).size.width;
     return InkWell(
       onTap: () => launch(widget.projectLink!),
       onHover: (isHovering) {
@@ -95,9 +94,8 @@ class _ProjectCardWidgetState extends State<ProjectCardWidget> {
                   widget.projectTitle!,
                   textAlign: TextAlign.center,
                   style: GoogleFonts.montserrat(
-                    fontSize: height * 0.02,
-                    letterSpacing: 1.5,
-                    fontWeight: FontWeight.w300,
+                    fontSize: 15,
+                    fontWeight: FontWeight.w400,
                   ),
                 ),
                 SizedBox(
@@ -107,10 +105,9 @@ class _ProjectCardWidgetState extends State<ProjectCardWidget> {
                   widget.projectDescription!,
                   textAlign: TextAlign.center,
                   style: GoogleFonts.montserrat(
-                      fontSize: height * 0.015,
-                      letterSpacing: 2.0,
-                      fontWeight: FontWeight.w200,
-                      height: width >= 600 ? 2.0 : 1.5),
+                    fontSize: 15,
+                    fontWeight: FontWeight.w200,
+                  ),
                 ),
                 SizedBox(
                   height: height * 0.01,

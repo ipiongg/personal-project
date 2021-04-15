@@ -37,7 +37,7 @@ class HomeSectionTablet extends StatelessWidget {
                     Text(
                       "SEJA BEM-VINDO(A)! ",
                       style: GoogleFonts.montserrat(
-                          fontSize: height * 0.03, fontWeight: FontWeight.w300),
+                          fontSize: 18, fontWeight: FontWeight.w400),
                     ),
                     Image.asset(
                       "assets/gif/hi.gif",
@@ -53,7 +53,7 @@ class HomeSectionTablet extends StatelessWidget {
                     Text(
                       "see!",
                       style: GoogleFonts.montserrat(
-                        fontSize: height * 0.07,
+                        fontSize: 50,
                         fontWeight: FontWeight.w100,
                       ),
                     ),
@@ -61,7 +61,7 @@ class HomeSectionTablet extends StatelessWidget {
                       "WAVE",
                       style: GoogleFonts.montserrat(
                           color: AppColors.primaryColor,
-                          fontSize: height * 0.07,
+                          fontSize: 55,
                           letterSpacing: 3.0,
                           fontWeight: FontWeight.w700),
                     ),

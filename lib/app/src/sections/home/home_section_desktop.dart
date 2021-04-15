@@ -44,7 +44,7 @@ class HomeSectionDesktop extends StatelessWidget {
                     Text(
                       "SEJA BEM-VINDO(A)! ",
                       style: GoogleFonts.montserrat(
-                          fontSize: height * 0.03, fontWeight: FontWeight.w300),
+                          fontSize: 18, fontWeight: FontWeight.w400),
                     ),
                     EntranceFader(
                       offset: Offset(0, 0),
@@ -62,16 +62,14 @@ class HomeSectionDesktop extends StatelessWidget {
                     Text(
                       "see!",
                       style: GoogleFonts.montserrat(
-                        fontSize:
-                            width < 1200 ? height * 0.085 : height * 0.095,
+                        fontSize: 50,
                         fontWeight: FontWeight.w100,
                       ),
                     ),
                     Text(
                       "WAVE",
                       style: GoogleFonts.montserrat(
-                          fontSize:
-                              width < 1200 ? height * 0.085 : height * 0.095,
+                          fontSize: 55,
                           fontWeight: FontWeight.w700,
                           color: AppColors.primaryColor,
                           letterSpacing: 3.0),
@@ -96,22 +94,19 @@ class HomeSectionDesktop extends StatelessWidget {
                               " Desenvolvimento de aplicativos",
                               speed: Duration(milliseconds: 50),
                               textStyle: GoogleFonts.montserrat(
-                                  fontSize: height * 0.03,
-                                  fontWeight: FontWeight.w200),
+                                  fontSize: 15, fontWeight: FontWeight.w200),
                             ),
                             TyperAnimatedText(
                               " Desenvolvimento de websites",
                               speed: Duration(milliseconds: 50),
                               textStyle: GoogleFonts.montserrat(
-                                  fontSize: height * 0.03,
-                                  fontWeight: FontWeight.w200),
+                                  fontSize: 15, fontWeight: FontWeight.w200),
                             ),
                             TyperAnimatedText(
                               " Desenvolvimento de lojas virtuais",
                               speed: Duration(milliseconds: 50),
                               textStyle: GoogleFonts.montserrat(
-                                  fontSize: height * 0.03,
-                                  fontWeight: FontWeight.w200),
+                                  fontSize: 15, fontWeight: FontWeight.w200),
                             )
                           ]),
                     ],
