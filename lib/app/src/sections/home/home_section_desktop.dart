@@ -40,20 +40,21 @@ class HomeSectionDesktop extends StatelessWidget {
               children: [
                 Row(
                   mainAxisSize: MainAxisSize.min,
+                  crossAxisAlignment: CrossAxisAlignment.end,
                   children: [
-                    Text(
-                      "SEJA BEM-VINDO(A)! ",
-                      style: GoogleFonts.montserrat(
-                          fontSize: 18, fontWeight: FontWeight.w400),
-                    ),
                     EntranceFader(
                       offset: Offset(0, 0),
                       delay: Duration(seconds: 2),
                       duration: Duration(milliseconds: 800),
                       child: Image.asset(
                         "assets/gif/hi.gif",
-                        height: height * 0.05,
+                        height: height * 0.04,
                       ),
+                    ),
+                    Text(
+                      " SEJA BEM-VINDO(A) À",
+                      style: GoogleFonts.montserrat(
+                          fontSize: 18, fontWeight: FontWeight.w400),
                     ),
                   ],
                 ),
@@ -63,7 +64,7 @@ class HomeSectionDesktop extends StatelessWidget {
                       "see!",
                       style: GoogleFonts.montserrat(
                         fontSize: 50,
-                        fontWeight: FontWeight.w100,
+                        fontWeight: FontWeight.w200,
                       ),
                     ),
                     Text(
@@ -116,8 +117,8 @@ class HomeSectionDesktop extends StatelessWidget {
                   height: height * 0.05,
                 ),
                 SocialMediaWidget(
-                  height: height * 0.035,
-                  horizontalPadding: width * 0.005,
+                  height: height * 0.06,
+                  horizontalPadding: width * 0.003,
                 ),
               ],
             ),

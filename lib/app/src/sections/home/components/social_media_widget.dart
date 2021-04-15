@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 import 'package:personal_portfolio/app/utils/animations/bottom_animation.dart';
 import 'package:personal_portfolio/app/utils/constants.dart';
 import 'package:personal_portfolio/app/utils/theme/app_colors.dart';
@@ -18,23 +17,8 @@ class SocialMediaWidget extends StatelessWidget {
           child: Padding(
             padding: EdgeInsets.symmetric(horizontal: horizontalPadding),
             child: IconButton(
-              icon: SvgPicture.asset(
-                'assets/svg/whatsapp-outline.svg',
-                color: Colors.white,
-              ),
-              iconSize: height,
-              onPressed: () => launchURL(kWhatsAppLink),
-              hoverColor: AppColors.primaryColor,
-            ),
-          ),
-        ),
-        WidgetAnimator(
-          child: Padding(
-            padding: EdgeInsets.symmetric(horizontal: horizontalPadding),
-            child: IconButton(
-              icon: SvgPicture.asset(
-                'assets/svg/instagram-outline.svg',
-                color: Colors.white,
+              icon: Image.asset(
+                'assets/img/instagram_circle.png',
               ),
               iconSize: height,
               onPressed: () => launchURL(kInstagramLink),
@@ -46,12 +30,24 @@ class SocialMediaWidget extends StatelessWidget {
           child: Padding(
             padding: EdgeInsets.symmetric(horizontal: horizontalPadding),
             child: IconButton(
-              icon: SvgPicture.asset(
-                'assets/svg/linkedin-outline.svg',
-                color: Colors.white,
+              icon: Image.asset(
+                'assets/img/whatsapp-circle.png',
               ),
               iconSize: height,
-              onPressed: () => launchURL(kLinkedinLink),
+              onPressed: () => launchURL(kWhatsAppLink),
+              hoverColor: AppColors.primaryColor,
+            ),
+          ),
+        ),
+        WidgetAnimator(
+          child: Padding(
+            padding: EdgeInsets.symmetric(horizontal: horizontalPadding),
+            child: IconButton(
+              icon: Image.asset(
+                'assets/img/email-circle.png',
+              ),
+              iconSize: height,
+              onPressed: () => launchURL(kEmailLink),
               hoverColor: AppColors.primaryColor,
             ),
           ),

@@ -34,15 +34,14 @@ class HomeSectionMobile extends StatelessWidget {
                 Row(
                   mainAxisSize: MainAxisSize.min,
                   children: [
-                    Text(
-                      "SEJA BEM-VINDO(A)! ",
-                      style: GoogleFonts.montserrat(
-                          fontSize: height * 0.025,
-                          fontWeight: FontWeight.w200),
-                    ),
                     Image.asset(
                       "assets/gif/hi.gif",
-                      height: height * 0.03,
+                      height: height * 0.04,
+                    ),
+                    Text(
+                      " SEJA BEM-VINDO(A) À",
+                      style: GoogleFonts.montserrat(
+                          fontSize: 18, fontWeight: FontWeight.w400),
                     ),
                   ],
                 ),
@@ -54,8 +53,8 @@ class HomeSectionMobile extends StatelessWidget {
                     Text(
                       "see!",
                       style: GoogleFonts.montserrat(
-                        fontSize: height * 0.055,
-                        fontWeight: FontWeight.w100,
+                        fontSize: 50,
+                        fontWeight: FontWeight.w200,
                       ),
                     ),
                     Text(
@@ -64,7 +63,7 @@ class HomeSectionMobile extends StatelessWidget {
                         fontWeight: FontWeight.w700,
                         color: AppColors.primaryColor,
                         letterSpacing: 2.0,
-                        fontSize: height * 0.055,
+                        fontSize: 55,
                       ),
                     ),
                   ],
@@ -83,22 +82,19 @@ class HomeSectionMobile extends StatelessWidget {
                             " Desenvolvimento de aplicativos",
                             speed: Duration(milliseconds: 50),
                             textStyle: GoogleFonts.montserrat(
-                                fontSize: height * 0.025,
-                                fontWeight: FontWeight.w200),
+                                fontSize: 15, fontWeight: FontWeight.w200),
                           ),
                           TyperAnimatedText(
                             " Desenvolvimento de websites",
                             speed: Duration(milliseconds: 50),
                             textStyle: GoogleFonts.montserrat(
-                                fontSize: height * 0.025,
-                                fontWeight: FontWeight.w200),
+                                fontSize: 15, fontWeight: FontWeight.w200),
                           ),
                           TyperAnimatedText(
                             " Desenvolvimento de lojas virtuais",
                             speed: Duration(milliseconds: 50),
                             textStyle: GoogleFonts.montserrat(
-                                fontSize: height * 0.025,
-                                fontWeight: FontWeight.w200),
+                                fontSize: 15, fontWeight: FontWeight.w200),
                           )
                         ]),
                   ],

@@ -4,7 +4,7 @@ import 'package:url_launcher/url_launcher.dart';
 //Contatos
 const String kInstagramLink = 'https://www.instagram.com/seewave.tech/';
 const String kWhatsAppLink = 'https://web.whatsapp.com/';
-const String kLinkedinLink = 'https://br.linkedin.com/';
+const String kEmailLink = 'mailto:contato@seewave.tech';
 
 // URL Launcher
 void launchURL(String _url) async =>
