@@ -88,7 +88,7 @@ class _ProjectCardWidgetState extends State<ProjectCardWidget> {
                       )
                     : Container(),
                 SizedBox(
-                  height: height * 0.02,
+                  height: height * 0.01,
                 ),
                 Text(
                   widget.projectTitle!,

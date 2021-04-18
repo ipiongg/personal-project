@@ -32,11 +32,11 @@ class ServiceSectionMobile extends StatelessWidget {
                 Padding(
               padding: const EdgeInsets.symmetric(vertical: 10.0),
               child: ServiceCardWidget(
-                cardWidth: width < 650 ? width * 0.8 : width * 0.5,
+                cardWidth: width < 650 ? width * 0.9 : width * 0.7,
                 serviceIcon: [
-                  'assets/json/mobile-app.json',
-                  'assets/json/website-interface.json',
-                  'assets/json/shopping-and-delivery.json'
+                  'assets/img/mobile-app.png',
+                  'assets/img/website.png',
+                  'assets/img/online-shopping.png',
                 ].elementAt(itemIndex),
                 serviceTitle: [
                   'Aplicativos móveis',
@@ -44,7 +44,7 @@ class ServiceSectionMobile extends StatelessWidget {
                   'Lojas virtuais',
                 ].elementAt(itemIndex),
                 serviceDescription: [
-                  'Aplicativos personalizados para smarthphones.',
+                  'Aplicativos personalizados na palma da mão dos seus clientes.',
                   'Projetos personalizados para a sua aplicação web.',
                   'Plataformas personalizadas para aumentar as suas vendas online.',
                 ].elementAt(itemIndex),

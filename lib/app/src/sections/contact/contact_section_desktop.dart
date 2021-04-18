@@ -39,6 +39,7 @@ class ContactSectionDesktop extends StatelessWidget {
                   projectIconData: kContactIcons[0],
                   projectTitle: kContactTitles[0],
                   projectDescription: kContactDetails[0],
+                  projectLink: kInstagramLink,
                 ),
               ),
               SizedBox(
@@ -51,6 +52,7 @@ class ContactSectionDesktop extends StatelessWidget {
                   projectIconData: kContactIcons[1],
                   projectTitle: kContactTitles[1],
                   projectDescription: kContactDetails[1],
+                  projectLink: kWhatsAppLink,
                 ),
               ),
               SizedBox(
@@ -63,6 +65,7 @@ class ContactSectionDesktop extends StatelessWidget {
                   projectIconData: kContactIcons[2],
                   projectTitle: kContactTitles[2],
                   projectDescription: kContactDetails[2],
+                  projectLink: kEmailLink,
                 ),
               ),
             ],

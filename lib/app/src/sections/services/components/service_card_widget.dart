@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:lottie/lottie.dart';
 import 'package:personal_portfolio/app/utils/theme/app_colors.dart';
 import 'package:url_launcher/url_launcher.dart';
 
@@ -28,9 +27,11 @@ class _ServiceCardWidgetState extends State<ServiceCardWidget> {
   bool isHover = false;
   @override
   Widget build(BuildContext context) {
-    double height = MediaQuery.of(context).size.height;
+    // double height = MediaQuery.of(context).size.height;
     return InkWell(
-      onTap: () => launch(widget.serviceLink!),
+      onTap: widget.serviceLink != null
+          ? () => launch(widget.serviceLink!)
+          : () {},
       onHover: (isHovering) {
         if (isHovering) {
           setState(() {
@@ -62,30 +63,42 @@ class _ServiceCardWidgetState extends State<ServiceCardWidget> {
                   ]
                 : []),
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          mainAxisSize: MainAxisSize.max,
           children: [
-            Lottie.asset(
-              widget.serviceIcon,
-              height: height * 0.24,
-            ),
-            Text(
-              widget.serviceTitle!,
-              textAlign: TextAlign.center,
-              style: GoogleFonts.montserrat(
-                fontSize: 15,
-                fontWeight: FontWeight.w500,
-              ),
-            ),
             Expanded(
-              child: Text(
-                widget.serviceDescription!,
-                textAlign: TextAlign.center,
-                style: GoogleFonts.montserrat(
-                  fontSize: 15,
-                  fontWeight: FontWeight.w200,
-                ),
+              flex: 8,
+              child: Image.asset(
+                widget.serviceIcon,
+                // height: height * 0.24,
               ),
-            )
+            ),
+            SizedBox(height: 5),
+            Expanded(
+              flex: 4,
+              child: Column(
+                children: [
+                  Text(
+                    widget.serviceTitle!,
+                    textAlign: TextAlign.center,
+                    style: GoogleFonts.montserrat(
+                      fontSize: 15,
+                      fontWeight: FontWeight.w500,
+                    ),
+                  ),
+                  Expanded(
+                    child: Text(
+                      widget.serviceDescription!,
+                      textAlign: TextAlign.center,
+                      style: GoogleFonts.montserrat(
+                        fontSize: 15,
+                        fontWeight: FontWeight.w200,
+                      ),
+                    ),
+                  )
+                ],
+              ),
+            ),
           ],
         ),
       ),

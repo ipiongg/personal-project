@@ -24,12 +24,11 @@ dependencies:
   flutter:
     sdk: flutter
   google_fonts: ^2.0.0
-  url_launcher: ^6.0.2
-  responsive_builder: ^0.4.0-nullsafety.1
+  url_launcher: ^6.0.3
+  responsive_builder: ^0.4.1
   carousel_slider: ^4.0.0-nullsafety.0
   scrollable_positioned_list: ^0.2.0-nullsafety.0
   animated_text_kit: ^4.1.0
-  lottie: ^1.0.1
   
 dev_dependencies:
   flutter_test:
@@ -50,8 +49,6 @@ flutter:
     - assets/
     - assets/img/
     - assets/gif/
-    - assets/svg/
-    - assets/json/
 
   
   #   - images/a_dot_ham.jpeg

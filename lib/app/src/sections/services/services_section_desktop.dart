@@ -39,10 +39,10 @@ class ServicesSectionDesktop extends StatelessWidget {
                     child: ServiceCardWidget(
                       cardWidth: width < 1200 ? width * 0.3 : width * 0.22,
                       cardHeight: width < 1200 ? height * 0.4 : height * 0.35,
-                      serviceIcon: 'assets/json/mobile-app.json',
+                      serviceIcon: 'assets/img/mobile-app.png',
                       serviceTitle: 'Aplicativos móveis',
                       serviceDescription:
-                          'Aplicativos personalizados para smarthphones.',
+                          'Aplicativos personalizados na palma da mão dos seus clientes.',
                     ),
                   ),
                   SizedBox(
@@ -52,7 +52,7 @@ class ServicesSectionDesktop extends StatelessWidget {
                     child: ServiceCardWidget(
                       cardWidth: width < 1200 ? width * 0.3 : width * 0.22,
                       cardHeight: width < 1200 ? height * 0.4 : height * 0.35,
-                      serviceIcon: 'assets/json/website-interface.json',
+                      serviceIcon: 'assets/img/website.png',
                       serviceTitle: 'Websites',
                       serviceDescription:
                           'Projetos personalizados para a sua aplicação web.',
@@ -65,7 +65,7 @@ class ServicesSectionDesktop extends StatelessWidget {
                     child: ServiceCardWidget(
                       cardWidth: width < 1200 ? width * 0.3 : width * 0.22,
                       cardHeight: width < 1200 ? height * 0.4 : height * 0.35,
-                      serviceIcon: 'assets/json/shopping-and-delivery.json',
+                      serviceIcon: 'assets/img/online-shopping.png',
                       serviceTitle: 'Lojas virtuais',
                       serviceDescription:
                           'Plataformas personalizadas para aumentar as suas vendas online.',

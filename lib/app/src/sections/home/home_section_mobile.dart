@@ -103,7 +103,7 @@ class HomeSectionMobile extends StatelessWidget {
                   height: height * 0.035,
                 ),
                 SocialMediaWidget(
-                  height: height * 0.03,
+                  height: height * 0.06,
                   horizontalPadding: 2.0,
                 )
               ],

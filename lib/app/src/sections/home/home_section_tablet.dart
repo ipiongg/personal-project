@@ -99,7 +99,7 @@ class HomeSectionTablet extends StatelessWidget {
                   height: height * 0.045,
                 ),
                 SocialMediaWidget(
-                  height: height * 0.035,
+                  height: height * 0.06,
                   horizontalPadding: width * 0.01,
                 )
               ],
